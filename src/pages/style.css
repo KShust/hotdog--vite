@@ -1,0 +1,35 @@
+.topping--list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topping {
+    width: 50%;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #000;
+    border-radius: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topping h3 {
+    font-size: 20px;
+    display: inline;
+    text-align: left;
+}
+
+.topping p {
+    font-size: 20px;
+    display: inline;
+    text-align: right;
+}
+
+.topping--selected {
+    background-color: lightgreen;
+}
