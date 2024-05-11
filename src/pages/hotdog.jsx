@@ -35,8 +35,6 @@ export const renderToppings = () => {
 }
 
 export const toggleTopping = (index) => {
-    console.log('Toppings:', toppings);
-    console.log('Index:', index);
         toppings[index].selected =!toppings[index].selected
         renderToppings()
     }
