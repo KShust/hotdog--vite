@@ -22,7 +22,7 @@ export const renderToppings = () => {
         `
 
         item.classList.add('topping')
-        if (topping.isSelected) {
+        if (topping.selected) {
             item.classList.add('topping--selected');
         }
 
@@ -34,12 +34,9 @@ export const renderToppings = () => {
     })
 }
 
-
 export const toggleTopping = (index) => {
-    if (index >= 0 && index < toppings.length) {
-        toppings[index].isSelected =!toppings[index].isSelected
+    console.log('Toppings:', toppings);
+    console.log('Index:', index);
+        toppings[index].selected =!toppings[index].selected
         renderToppings()
     }
-}
-
-
